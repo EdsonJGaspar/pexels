@@ -3,7 +3,7 @@ import "./globals.css";
 import { Fira_Code, Inter, JetBrains_Mono } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/web/app-sidebar";
 import { Header } from "@/components/web/header/header";
 

@@ -7,10 +7,6 @@ import {
   SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuAction,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import {
   Group,
@@ -19,17 +15,17 @@ import {
   Image,
   Navigation,
   Settings,
-  User,
   Video,
 } from "lucide-react";
 import { SidebarCollapseButtom } from "./sidebar-collapse-buttom";
 import { SidebarMenuItems } from "./sidebar-menu-items";
+import { UserDropdown } from "./user-dropdown";
 
 export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <h1 className="group-data-[collapsible=icon]:hidden text-primary font-bold text-2xl font-heading p-3 md:p-6">
+        <h1 className="group-data-[collapsible=icon]:hidden text-primary font-bold text-2xl p-3 md:p-6 font-serif">
           Pexels
         </h1>
         <SidebarMenu>
@@ -39,7 +35,7 @@ export function AppSidebar() {
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>
-            <span className="group-data-[collapsible=icon]:hidden">Label</span>
+            <span className="group-data-[collapsible=icon]:hidden">Menus</span>
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -81,9 +77,8 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter className="flex flex-row gap-2 items-center">
-        <User />
-        <span className="group-data-[collapsible=icon]:hidden">User</span>
+      <SidebarFooter>
+        <UserDropdown username="Edson Gaspar" ocupation="Engenheiro" />
       </SidebarFooter>
     </Sidebar>
   );
