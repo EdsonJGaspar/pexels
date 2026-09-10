@@ -2,7 +2,10 @@ import { InputRoot } from "@/components/web/input";
 import { Search } from "lucide-react";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  //const data = await searchPhotos("kolkata", 1);
+  // console.log(data);
+
   return (
     <main>
       <section className="h-96 relative overflow-hidden shadow-2xl">
