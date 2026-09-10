@@ -11,10 +11,12 @@ import {
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { UserDropdown } from "../user-dropdown";
+import { LocaleSwitcher } from "../localswitch";
 
 export function Header() {
   return (
     <header className="border-b flex items-center gap-5 justify-end px-6 py-4">
+      <LocaleSwitcher />
       <ModeToggle />
       <Bell />
 
