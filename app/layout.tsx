@@ -37,22 +37,7 @@ export default function RootLayout({
         `${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} antialiased`,
       )}
     >
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <SidebarProvider>
-            <AppSidebar />
-            <main className="border w-full">
-              <Header />
-              {children}
-            </main>
-          </SidebarProvider>
-        </ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
